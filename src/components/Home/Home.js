@@ -6,12 +6,12 @@ import  './Home.css';
 const Home = () => {
     const quizes = useLoaderData();
     const topics = quizes.data;
-     console.log(topics)
+    //  console.log(topics)
 
     
-     const startQuizes = quizTopic => {
-        console.log(quizTopic)
-     }
+    //  const startQuizes = quizTopic => {
+    //     console.log(quizTopic)
+    //  }
     return (
         <div>
             <h1>data :{topics.length }</h1>
@@ -20,7 +20,7 @@ const Home = () => {
                     topics.map(quizTopic => <Quizes
                     key={quizTopic.id}
                     quizTopic={quizTopic}
-                    startQuizes={startQuizes}
+                    // startQuizes={startQuizes}
                     ></Quizes>)
                 }
             </div>

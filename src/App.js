@@ -3,6 +3,7 @@ import './App.css';
 import About from './components/About/About';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
+import QuizDetails from './components/QuizDetails/QuizDetails';
 import Topic from './components/Topic/Topic';
 import Main from './layouts/Main';
 
@@ -17,7 +18,14 @@ function App() {
       
       {path:`/topic`,element:<Topic></Topic>},
       {path:`/blog`,element:<Blog></Blog>},
-      {path:`/about`,element:<About></About>}
+      {path:`/about`,element:<About></About>},
+      {
+        path: '/quiz/:quizId',
+        loader: async ({params}) =>{
+          return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId} `)
+        },
+        element:<QuizDetails></QuizDetails>
+      }
 
 
 
