@@ -1,0 +1,8 @@
+.blog{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.blog div{
+    width: 50%;
+    margin: 0 auto;
+}
