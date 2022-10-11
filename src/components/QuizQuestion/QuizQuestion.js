@@ -2,7 +2,7 @@ import React from 'react';
 import './QuizQuestion.css';
 
 const QuizQuestion = ({allQuestion} ) => {
-    const {name,question,options,id} =allQuestion;
+    const {question,options,id} =allQuestion;
  
     // console.log(allQuestion);
     return (

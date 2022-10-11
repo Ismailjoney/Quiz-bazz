@@ -6,6 +6,7 @@ import QuizDetails from './components/QuizDetails/QuizDetails';
 import Topic from './components/Topic/Topic';
 import Main from './layouts/Main';
 
+
 function App() {
   const router = createBrowserRouter([
     {path:'/',
