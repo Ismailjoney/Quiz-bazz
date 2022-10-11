@@ -1,6 +1,10 @@
  .quizesContainer{
     border:1px solid gray;
     border-radius: 7px;
+    width:400px;
+    height:500px;
+    padding:7px;
+
  }
 .quizesContainer img{
     width:100%;

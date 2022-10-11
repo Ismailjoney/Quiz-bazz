@@ -4,11 +4,11 @@ import QuizQuestion from '../QuizQuestion/QuizQuestion';
 
 const QuizDetails = () => {
     const quizDetails = useLoaderData();
-   
-    const quizQuestions = quizDetails.data.questions;
-
-   
+    // const name = quizDetails.data;
     
+    const quizQuestions = quizDetails.data.questions;
+    console.log(quizQuestions);
+
     return (
         <div>
             <h2>Quiz of react</h2>
@@ -16,6 +16,7 @@ const QuizDetails = () => {
              quizQuestions.map(allQuestion => <QuizQuestion
              key={allQuestion.id}
              allQuestion={allQuestion}
+              
              ></QuizQuestion>)
             }
         </div>

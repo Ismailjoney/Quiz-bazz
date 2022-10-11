@@ -9,7 +9,7 @@ const Quizes = ({quizTopic}) => {
         <div className='quizesContainer'>
             <img src={logo} alt="" />
             <div>
-                <h3>Name: {name}</h3>
+                <h3>{name}</h3>
                 <p>Total: {total}</p>
                 <Link to= {`quiz/${id}`}>
                     <button>Quiz</button>

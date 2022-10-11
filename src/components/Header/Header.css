@@ -5,8 +5,13 @@
 }
 
 nav a{
-    margin-left: 20px;
+    margin-left: 16px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+}
+.navbar span{
+    font-weight: bold;
+    font-size: 33px;
+    margin: -14px;
 }

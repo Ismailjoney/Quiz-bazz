@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import About from './components/About/About';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import QuizDetails from './components/QuizDetails/QuizDetails';
@@ -12,24 +11,29 @@ function App() {
     {path:'/',
     element:<Main></Main>,
     children:[
-      {path:'/',
+      {
+      path:'/',
       loader : ()=> fetch(`https://openapi.programming-hero.com/api/quiz`), 
-      element:<Home></Home>},
+      element:<Home></Home>
+    },
       
-      {path:`/topic`,element:<Topic></Topic>},
+      {
+      path:`/topic`,
+      loader: () => fetch(`https://openapi.programming-hero.com/api/quiz`),
+      element:<Topic></Topic>
+    },
       {path:`/blog`,element:<Blog></Blog>},
-      {path:`/about`,element:<About></About>},
+      
       {
         path: '/quiz/:quizId',
         loader: async ({params}) =>{
           return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId} `)
         },
         element:<QuizDetails></QuizDetails>
-      }
-
-
-
-]}
+      },
+]},
+{path:'*',
+element:<div><h1>404 <br/> CAN NOT FOUND THE PAGE</h1></div>}
   ])
   return (
     <div className="App">
