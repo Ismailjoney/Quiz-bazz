@@ -11,7 +11,8 @@ const Home = () => {
      
     return (
         <div className='main-container'>
-            <h1>DATA:{topics.length } akta image r akta header thakbe</h1>
+
+            <h1 className='text-3xl m-6 font-bold'>Hey u can paly quiz tjis weBsite if you ready you can play now</h1>
        
             <div className='container'>
                 {
