@@ -1,6 +1,6 @@
 .questionAndOption{
-    margin:0 auto;
-    border:1px solid tomato;
+    margin:20px auto;
+    border:1px solid rgba(168, 49, 28, 0.062);
     width:60%;
     height:50%;
 }
@@ -9,4 +9,8 @@
     width: 60%;
     margin:10px auto;
      
+}
+.questionAndOption:hover{
+    border:2px solid black;
+    border-radius: 10px;
 }
