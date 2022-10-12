@@ -4,8 +4,8 @@ import './QuizQuestion.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const QuizQuestion = ({allQuestion} ) => {
-    const {question,options,id,correctAnswer} =allQuestion;
+const QuizQuestion = ({allQuestion,data} ) => {
+    const {question,options,id,correctAnswer,name} =allQuestion;
    
     const [total,setTotal] = useState(null)
  
@@ -34,7 +34,11 @@ const QuizQuestion = ({allQuestion} ) => {
 
 
     return (
-        <div className='questionAndOption'>
+        <div>
+             <h2 className='text-2xl font-extrabold'>{data.name} Quiz</h2>
+
+             <div className='questionAndOption'>
+           
             <div className='qustion-and-icon'>
                 <h3>questions: {question}</h3>
                 <div>
@@ -53,15 +57,12 @@ const QuizQuestion = ({allQuestion} ) => {
                     <input className='ml-2 mr-2'  disabled={total} type="radio" id="index" name="fav_language" value= {singleOptions}/>
                     <label for="index"> {singleOptions} </label>
                     </button>  
-               
-
-              
-             
-               
                 )
             }
          <ToastContainer />
         </div>
+        </div>
+        
     );
 };
 
