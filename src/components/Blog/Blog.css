@@ -7,7 +7,7 @@
     margin: 30px auto;
     border:1px solid groove;
 }
-.blog h3{
+.blog .blog-header{
     font-size: 26px;
     margin: 5px 0;
     font-weight: 700;
