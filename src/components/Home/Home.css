@@ -1,6 +1,11 @@
 .main-container{
-    margin-bottom: 200px;
-    
+    margin-bottom: 200px;  
+}
+.cover{
+    width:80%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns:  2fr 1fr;
 }
 
 .container{
@@ -9,7 +14,9 @@
     gap:30px;
     width:80%;
     margin: 0 auto;
-
+}
+.cover-description{
+    margin-top: 60px;
 }
 
 @media screen and (max-width: 576px) {
@@ -19,6 +26,11 @@
         gap:30px;
         width:80%;
         margin: 0 auto;
-        
+    }
+    .cover{
+        width:80%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

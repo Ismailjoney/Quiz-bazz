@@ -4,15 +4,23 @@
     justify-content: space-between;
     margin: 17px auto;
 }
+ 
 
 nav a{
-    margin-left: 16px;
+    margin-left: 11px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    border: 1px solid black;
+    padding: 4px 6px;
+    border-radius: 5px;
 }
 .navbar span{
     font-weight: bold;
     font-size: 33px;
     margin: -14px;
+}
+nav a:hover{
+    background-color: red;
+    color:aliceblue;
 }

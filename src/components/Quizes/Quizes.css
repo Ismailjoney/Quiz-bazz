@@ -1,23 +1,27 @@
  .quizesContainer{
     border:1px solid gray;
     border-radius: 7px;
-    width:80%;
+    width:100%;
     height:450px;
     padding:7px;
+    background-color: rgb(128, 173, 128);
 
  }
 .quizesContainer img{
     width:100%;
     height:60%;
 }
-.quizesContainer button {
-   margin-bottom: 18px;
+.quizesContainer  .quiz {
+    margin: 36px 0;
     padding: 9px 48px;
     font-weight: bold;
     font-size: 20px;
     border-radius: 9px;
 }
-.quizesContainer button:hover{
+.quizesContainer .quiz:hover{
     background-color: black;
     color:beige;
+}
+.quiz{
+    border:1px solid black;
 }

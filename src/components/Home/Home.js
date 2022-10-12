@@ -2,8 +2,8 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Quizes from '../Quizes/Quizes';
 import  './Home.css';
+import logo from  './logo.jpg'; 
  
-
 const Home = () => {
     const quizes = useLoaderData();
     const topics = quizes.data;
@@ -11,8 +11,14 @@ const Home = () => {
      
     return (
         <div className='main-container'>
-
-            <h1 className='text-3xl m-6 font-bold'>Hey u can paly quiz tjis weBsite if you ready you can play now</h1>
+            <div className="cover">
+                <div className="cover-img">
+                    <img src={logo}  alt=""  className='h-56' w-full/>
+                </div>
+                <div className="cover-description">
+                    <p>Hey you can paly quiz this weBsite. if you ready ? you can play now and grow your knowladge</p>
+                </div>
+            </div>
        
             <div className='container'>
                 {

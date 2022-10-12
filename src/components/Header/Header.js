@@ -5,7 +5,7 @@ import './Header.css';
 const Header = () => {
     return (
         <div className='navbar'>
-            <span>Quiz</span>
+            <span> Q-uiz</span>
             <nav>
                 <Link to='/'>Home</Link>
                 <Link to='/topic'>Static</Link>
